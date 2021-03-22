@@ -1,7 +1,7 @@
 
 
 <!-- PROJECT LOGO -->
-<h3 align="center">Period 2 Birds</h3>
+<h3 align="center">Period 2 Lions</h3>
 <h3 align="center">http://104.2.84.172/</h3>
 
 <!-- TABLE OF CONTENTS -->
@@ -13,10 +13,7 @@
       <ul>
           <li><a href="#getting-started">Getting Started</a><li> 
           <li><a href="#scrum-board">Scrum Board</a></li>
-          <li><a href="#commercial">Commercial</a></li>
           <li><a href="#contributes">Contributes</a></li>
-          <li><a href="#games">Games</a></li>
-          <li><a href="#easter-egg">Easter Egg</a></li>
           <li><a href="#contact">Contact</a></li>
           <li><a href="#map-of-project-to-ap-csp-requirements">Map of project to AP CSP requirements</a></li>
       <ul>
