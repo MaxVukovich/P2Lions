@@ -43,11 +43,11 @@ Team Contributes will be found [HERE](https://github.com/MaxVukovich/P2Lions/gra
 # Contact
 [Max Vukovich](https://github.com/MaxVukovich)
 
-[Andrew Crisostomo](https://github.com/shekark642)
+[Andrew Crisostomo](https://github.com/andrewc26)
 
-[Anthony Wilson](ryanshay18)
+[Anthony Wilson](https://github.com/anthonywilsonn)
 
-[Ahmad Nasim](OpticStranger)
+[Ahmad Nasim](https://github.com/OpticStranger)
 
 [Github Repository Link](https://github.com/MaxVukovich/P2Lions)
 
