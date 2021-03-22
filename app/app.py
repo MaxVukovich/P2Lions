@@ -6,16 +6,17 @@ Flask(__name__) establishes resources on the filesystem (aka package).
 """
 
 from flask import Flask
-from y2021.tri1.app import y2021_tri1_bp
-from y2021.tri2.app import y2021_tri2_bp
-from y2021.tri3.app import y2021_tri3_bp
+from gamereview.Ahmad.app import gamereview_bp
+from gamereview.Max.app import gamereview_bp
+from gamereview.Anthony.app import gamereview_bp
+from gamereview.Andrew.app import gamereview_bp
 
 
 app = Flask(__name__)
-app.register_blueprint(y2021_tri1_bp, url_prefix='/y2021/tri1')
-app.register_blueprint(y2021_tri2_bp, url_prefix='/y2021/tri2')
-app.register_blueprint(y2021_tri3_bp, url_prefix='/y2021/tri3')
-
+app.register_blueprint(gamereview_bp, url_prefix='/Ahmad')
+app.register_blueprint(gamereview_bp, url_prefix='/Andrew')
+app.register_blueprint(gamereview_bp, url_prefix='/Anthony')
+app.register_blueprint(gamereview_bp, url_prefix='/Max')
 
 @app.route('/')
 def index():
