@@ -2,7 +2,7 @@
 
 <!-- PROJECT LOGO -->
 <h3 align="center">Period 2 Lions</h3>
-<h3 align="center">http://104.2.84.172/</h3>
+<h3 align="center">http://70.95.177.55:8080//</h3>
 
 <!-- TABLE OF CONTENTS -->
 <details open="open">
