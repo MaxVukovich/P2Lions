@@ -1,10 +1,10 @@
 from flask import Blueprint
 
-gamereview_bp = Blueprint('gamereview', __name__,
+gamereview_bp1 = Blueprint('gamereview1', __name__,
                           template_folder='templates',
                           static_folder='static', static_url_path='assets')
 
 
-@gamereview_bp.route('/')
+@gamereview_bp1.route('/')
 def index():
-    return "Y2021 tri1 Home Site"
+    return "Ahmad is cool"
