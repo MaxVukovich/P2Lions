@@ -26,7 +26,7 @@
 
 
 # About The Project
-[![name](https://raw.githubusercontent.com/shekark642/P4Birds/main/static/images/card%20game%20main%20page.PNG)](http://104.2.84.172/)
+[![name](https://raw.githubusercontent.com/shekark642/P4Birds/main/static/images/card%20game%20main%20page.PNG)](http://70.95.177.55:8080/)
 
 # Getting Started
 Use this runtime link to get started.
