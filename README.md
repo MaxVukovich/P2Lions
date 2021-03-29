@@ -4,6 +4,9 @@
 <h3 align="center">Period 2 Lions</h3>
 <h3 align="center">http://70.95.177.55:8080//</h3>
 
+# Links
+Here is links to our [Project Plan](https://docs.google.com/document/d/1m9iGs8guf-1QQK8ik5K9iR7KFQmpcG5HrypKmLz7Zn4/edit) [Runtime](http://70.95.177.55:8080) [Scrum Board](https://github.com/MaxVukovich/P2Lions/projects/1?fullscreen=true) [Blueprints](https://github.com/MaxVukovich/P2Lions/tree/main/gamereview)
+
 <!-- TABLE OF CONTENTS -->
 <details open="open">
   <summary><h2 style="display: inline-block">Table of Contents</h2></summary>
