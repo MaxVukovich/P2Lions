@@ -5,7 +5,15 @@
 <h3 align="center">http://70.95.177.55:8080//</h3>
 
 # Links For Crossover Grading
-Here is links to our [Project Plan](https://docs.google.com/document/d/1m9iGs8guf-1QQK8ik5K9iR7KFQmpcG5HrypKmLz7Zn4/edit) [Runtime](http://70.95.177.55:8080) [Scrum Board](https://github.com/MaxVukovich/P2Lions/projects/1?fullscreen=true) [Blueprints](https://github.com/MaxVukovich/P2Lions/tree/main/gamereview) [Anteater Crossover](https://docs.google.com/document/d/1e-wU_aLVDC0_eImSFV63ZdEv87nWCqiWHWl2K7X62tQ/edit)
+Here is links to our [Project Plan](https://docs.google.com/document/d/1m9iGs8guf-1QQK8ik5K9iR7KFQmpcG5HrypKmLz7Zn4/edit) 
+
+[Runtime](http://70.95.177.55:8080)
+
+[Scrum Board](https://github.com/MaxVukovich/P2Lions/projects/1?fullscreen=true) 
+
+[Blueprints](https://github.com/MaxVukovich/P2Lions/tree/main/gamereview)
+
+[Anteater Crossover](https://docs.google.com/document/d/1e-wU_aLVDC0_eImSFV63ZdEv87nWCqiWHWl2K7X62tQ/edit)
 
 <!-- TABLE OF CONTENTS -->
 <details open="open">
