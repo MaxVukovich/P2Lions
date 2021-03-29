@@ -1,4 +1,4 @@
-from flask import Blueprint
+from flask import Blueprint, render_template
 
 gamereview_bp3 = Blueprint('gamereview3', __name__,
                           template_folder='templates',
@@ -7,4 +7,4 @@ gamereview_bp3 = Blueprint('gamereview3', __name__,
 
 @gamereview_bp3.route('/')
 def index():
-    return "Anthony is cool"
+    return render_template("anthonyhome.html")
