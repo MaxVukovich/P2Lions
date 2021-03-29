@@ -29,7 +29,7 @@ Here is links to our [Project Plan](https://docs.google.com/document/d/1m9iGs8gu
 
 
 # About The Project
-[![name](https://raw.githubusercontent.com/shekark642/P4Birds/main/static/images/card%20game%20main%20page.PNG)](http://70.95.177.55:8080/)
+[![name](https://user-images.githubusercontent.com/72881842/112874405-c5dc7700-9077-11eb-98bb-2f762daedc7a.PNG)](http://70.95.177.55:8080/)
 
 # Getting Started
 Use this runtime link to get started.
