@@ -21,7 +21,7 @@ app.register_blueprint(gamereview_bp4, url_prefix='/Max')
 
 @app.route('/')
 def index():
-    return render_template("home.html")
+    return render_template("ahmadhome.html")
 
 if __name__ == "__main__":
     # runs the application on the repl development server
