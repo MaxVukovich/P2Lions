@@ -5,7 +5,17 @@
 <h3 align="center">http://70.95.177.55:8080//</h3>
 
 # Links For Crossover Grading
-Here is links to our [Project Plan](https://docs.google.com/document/d/1m9iGs8guf-1QQK8ik5K9iR7KFQmpcG5HrypKmLz7Zn4/edit) [Runtime](http://70.95.177.55:8080) [Scrum Board](https://github.com/MaxVukovich/P2Lions/projects/1?fullscreen=true) [Blueprints](https://github.com/MaxVukovich/P2Lions/tree/main/gamereview) [Anteater Crossover](https://docs.google.com/document/d/1e-wU_aLVDC0_eImSFV63ZdEv87nWCqiWHWl2K7X62tQ/edit)
+Here is links to our 
+
+[Project Plan](https://docs.google.com/document/d/1m9iGs8guf-1QQK8ik5K9iR7KFQmpcG5HrypKmLz7Zn4/edit) 
+
+[Runtime](http://70.95.177.55:8080)
+
+[Scrum Board](https://github.com/MaxVukovich/P2Lions/projects/1?fullscreen=true) 
+
+[Blueprints](https://github.com/MaxVukovich/P2Lions/tree/main/gamereview)
+
+[Anteater Crossover](https://docs.google.com/document/d/1e-wU_aLVDC0_eImSFV63ZdEv87nWCqiWHWl2K7X62tQ/edit)
 
 <!-- TABLE OF CONTENTS -->
 <details open="open">
@@ -29,7 +39,7 @@ Here is links to our [Project Plan](https://docs.google.com/document/d/1m9iGs8gu
 
 
 # About The Project
-[![name](https://raw.githubusercontent.com/shekark642/P4Birds/main/static/images/card%20game%20main%20page.PNG)](http://70.95.177.55:8080/)
+[![name](https://user-images.githubusercontent.com/72881842/112874405-c5dc7700-9077-11eb-98bb-2f762daedc7a.PNG)](http://70.95.177.55:8080/)
 
 # Getting Started
 Use this runtime link to get started.
