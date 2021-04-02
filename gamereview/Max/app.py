@@ -12,3 +12,5 @@ def index():
 @gamereview_bp4.route('/maxminilab')
 def minilab():
     return render_template("maxminilab.html")
+
+#
