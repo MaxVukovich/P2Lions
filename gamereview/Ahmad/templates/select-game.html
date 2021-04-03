@@ -1,7 +1,7 @@
-{% extends 'base.html' %}
+{% extends 'ahmadbase.html' %}
 {% block home %}
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
@@ -10,9 +10,9 @@
 
 
 
-        <div class="jumbotron text-center row">
+        <div class="jumbotron text-center row bg-transparent">
             <div>
-                <h3>How many game recs do you want? </h3>
+                <h3 class="text-white"> How many game recs do you want? </h3>
                 <form id="fibForm" action="" method="POST" >
                     <input name="series" id="series" type="number" min="1" max="3" >
                     <button class="btn  my-2 my-sm-0 text-white bg-danger" type="submit"> Get game recomendations!</button>
@@ -21,12 +21,12 @@
             </div>
 
             <div class="col-md-6">
-                <h3>Here are {{gamerecs.series}} book recs!</h3>
+                <h3 class="text-white">Here are {{gamerecs.series}} game recs!</h3>
                 <!-- Number, List table -->
                 <table class="mx-auto">
                     <tr>
-                        <th scope="col">{{gamerecs.series}} books: </th>
-                        <th scope="col">{{gamerecs.list}}</th>
+                        <th class="text-white" scope="col">{{gamerecs.series}} games: </th>
+                        <th class=text-white scope="col">{{gamerecs.list}}</th>
                     </tr>
                 </table>
 
@@ -52,6 +52,12 @@
 
 
 </container>
+    <style>
+body
+{
+  background-image: url(/static/images/anything2.jpg);
+}
+</style>
 
 </body>
 </html>

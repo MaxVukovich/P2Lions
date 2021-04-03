@@ -26,7 +26,7 @@ class Games:
     """Algorithm for building Fibonacci sequence, this id called from __init__"""
     def game_series(self):
         limit = self._series
-        f = [(random.sample((gameslist1), k=2))]  # fibonacci starting array/list
+        f = [(random.sample((gameslist1), k=3))]  # fibonacci starting array/list
         while limit > 0:
             self.set_data(f[0])
             f = [f[0]]
@@ -60,7 +60,7 @@ class Games:
 
 if __name__ == "__main__":
     '''Value for testing'''
-    a = 2
+    a = 4
     '''Constructor of Class object'''
     gamerecs = Games(a/a)
     print(f"Here are some game recomendations = {gamerecs.list}")
