@@ -13,7 +13,6 @@ def index():
 @gamereview_bp4.route('/maxminilab', methods=['GET', 'POST'])
 def search():
     if request.method == 'POST':
-        a = int(request.form.get("series"))
-        showrecs = Shows(a/a)
-        return render_template("maxminilab.html", showrecs=Shows(a))
+        k = int(request.form.get("series"))
+        return render_template("maxminilab.html", showrecs=Shows(k))
     return render_template("maxminilab.html", showrecs=Shows(1))

@@ -1,10 +1,9 @@
-{% extends 'base.html' %}
+{% extends 'maxbase.html' %}
 {% block home %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
 
@@ -12,8 +11,9 @@
 
     <div class="jumbotron text-center row bg-danger">
         <div>
-            <h3>How many show recs do you want? </h3>
+            <h3 class="text-white">How many show recs do you want? </h3>
             <form id="fibForm" action="" method="POST" >
+                <p style="color:white;text-align:center;font-family:verdana;">For a show recommendation, just click the get show recommendation button!</p>
                 <input name="series" id="series" type="number" min="0" max="6" >
                 <button class="btn my-2 my-sm-0 text-white bg-transparent" type="submit"> Get show recommendations!</button>
 
@@ -21,12 +21,12 @@
         </div>
 
         <div class="col-md-6">
-            <h3>Here are {{showrecs.series}} show recs!</h3>
+            <h3 class="text-white">Here are {{showrecs.series}} show recs!</h3>
             <!-- Number, List table -->
             <table class="mx-auto">
                 <tr>
-                    <th scope="col">{{showrecs.series}} shows: </th>
-                    <th scope="col">{{showrecs.list}}</th>
+                    <th class="text-white" scope="col">{{showrecs.series}} shows: </th>
+                    <th class="text-white" scope="col">{{showrecs.list}}</th>
                 </tr>
             </table>
 
