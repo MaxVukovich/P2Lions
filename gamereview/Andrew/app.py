@@ -13,7 +13,6 @@ def index():
 @gamereview_bp2.route('/andrewminilab', methods=['GET', 'POST'])
 def search():
     if request.method == 'POST':
-        a = int(request.form.get("series"))
-        foodrecs = Foods(a/a)
-        return render_template("andrewminilab.html", foodrecs=Foods(a))
+        k = int(request.form.get("series"))
+        return render_template("andrewminilab.html", foodrecs=Foods(k))
     return render_template("andrewminilab.html", foodrecs=Foods(1))
