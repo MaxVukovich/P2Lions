@@ -13,8 +13,7 @@ def index():
 @gamereview_bp1.route('/games', methods=['GET', 'POST'])
 def search():
     if request.method == 'POST':
-        a = int(request.form.get("series"))
-        gamerecs = Games(a/a)
-        return render_template("games.html", gamerecs=Games(a))
+        k = int(request.form.get("series"))
+        return render_template("games.html", gamerecs=Games(k))
     return render_template("games.html", gamerecs=Games(1))
 
