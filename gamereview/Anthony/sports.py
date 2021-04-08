@@ -1,35 +1,29 @@
 import random
 
 
-sportslist1 = ["Soccer,", "Football", "Basketball", "Rugby", "Baseball", "Volleyball", "NASCAR", "Swimming"]
-
-sportslist2 = ["Soccer,", "Football", "Basketball"]
-
-
 class Sports:
-    """Initializer of class takes series parameter and returns Class Object"""
-    def __init__(self, series):
+    """Initializer of class takes k parameter and returns Class Object"""
+    def __init__(self, k):
         """Built in validation and exception"""
-        if series < 0 or series > 6:
-            raise ValueError("Series must be between 2 and 10")
-        self._series = series
+        if k < 0 or k > 6:
+            raise ValueError("k must be between 2 and 10")
+        self._k = k
         self._list = []
+        self._sports = ["Soccer,", "Football", "Swimming", "Baseball", "Basketball", "Rugby", "Golf", "UFC"]
         self._dict = {}
         self._dictID = 0
         # Duration timeElapsed;
         # Instant start = Instant.now();  // time capture -- start
-        self.sport_series()
+        self.sport_k()
         # Instant end = Instant.now();    // time capture -- end
         # this.timeElapsed = Duration.between(start, end);
 
     """Algorithm for building Fibonacci sequence, this id called from __init__"""
-    def sport_series(self):
-        limit = self._series
-        f = [(random.sample((sportslist1), k=2))]  # fibonacci starting array/list
-        while limit > 0:
-            self.set_data(f[0])
-            f = [f[0]]
-            limit -= 1
+    def sport_k(self):
+        f = [(random.sample((self._sports), k=self._k))]  # fibonacci starting array/list
+        self.set_data(f[0])
+        f = [f[0]]
+
 
     """Method/Function to set Fibonacci data: list, dict, and dictID are instance variables of Class"""
     def set_data(self, num):
@@ -40,8 +34,8 @@ class Sports:
 
     """Getters with decorator to allow . notation access"""
     @property
-    def series(self):
-        return self._series
+    def k(self):
+        return self._k
 
     @property
     def list(self):
@@ -59,9 +53,9 @@ class Sports:
 
 if __name__ == "__main__":
     '''Value for testing'''
-    a = 2
+    k = 2
     '''Constructor of Class object'''
-    sportrecs = Sports(a/a)
+    sportrecs = sports(k)
     print(f"Here are some sport recommendations = {sportrecs.list}")
 
 #for i in range(a):

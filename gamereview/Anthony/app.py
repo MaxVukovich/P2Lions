@@ -13,7 +13,7 @@ def index():
 @gamereview_bp3.route('/anthonyminilab', methods=['GET', 'POST'])
 def search():
     if request.method == 'POST':
-        a = int(request.form.get("series"))
-        sportrecs = Sports(a/a)
-        return render_template("anthonyminilab.html", sportrecs=Sports(a))
+        k = int(request.form.get("series"))
+
+        return render_template("anthonyminilab.html", sportrecs=Sports(k))
     return render_template("anthonyminilab.html", sportrecs=Sports(1))
