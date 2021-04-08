@@ -1,8 +1,6 @@
 import random
 
 
-
-
 class Games:
     """Initializer of class takes k parameter and returns Class Objectg"""
     def __init__(self, k):
