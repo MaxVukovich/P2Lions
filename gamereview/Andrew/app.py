@@ -16,3 +16,7 @@ def search():
         k = int(request.form.get("series"))
         return render_template("andrewminilab.html", foodrecs=Foods(k))
     return render_template("andrewminilab.html", foodrecs=Foods(1))
+
+@gamereview_bp2.route('/bubblesort')
+def bubbles1():
+    return render_template("bubbles1.html")
