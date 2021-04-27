@@ -50,7 +50,6 @@ class Shows:
         return self._dict[nth]
 
 
-
 if __name__ == "__main__":
     '''Value for testing'''
     k = 2
