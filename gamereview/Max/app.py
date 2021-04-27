@@ -16,3 +16,7 @@ def search():
         k = int(request.form.get("series"))
         return render_template("maxminilab.html", showrecs=Shows(k))
     return render_template("maxminilab.html", showrecs=Shows(1))
+
+@gamereview_bp4.route('/bubblesort')
+def bubblesort():
+    return render_template("bubblesort.html")
