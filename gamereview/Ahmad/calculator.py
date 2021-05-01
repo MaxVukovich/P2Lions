@@ -1,10 +1,8 @@
 import random
 
 
-
-
 class Games:
-    """Initializer of class takes k parameter and returns Class Objectg"""
+    """Initializer of class takes k parameter and returns Class Object"""
     def __init__(self, k):
         """Built in validation and exception"""
         if k < 0 or k > 6:
@@ -55,7 +53,7 @@ class Games:
 
 if __name__ == "__main__":
     '''Value for testing'''
-    k = 2
+    k = 3
     '''Constructor of Class object'''
     gamerecs = Games(k)
     print(f"Here are some game recomendations = {gamerecs.list}")

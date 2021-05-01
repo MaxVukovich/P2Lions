@@ -1,31 +1,35 @@
 import random
 
 
+foodslist1 = ["Tacos,", "Pizza", "Watermelon", "Salad", "Cheeseburger", "Chicken", "Mango", "Pasta"]
 
+foodslist2 = ["Tacos,", "Pizza", "Watermelon"]
 
 
 class Foods:
-    """Initializer of class takes k parameter and returns Class Object"""
-    def __init__(self, k):
+    """Initializer of class takes series parameter and returns Class Object"""
+    def __init__(self, series):
         """Built in validation and exception"""
-        if k < 0 or k > 6:
-            raise ValueError("k must be between 2 and 10")
-        self._k = k
+        if series < 0 or series > 6:
+            raise ValueError("Series must be between 2 and 10")
+        self._series = series
         self._list = []
-        self._foods = ["Tacos,", "Pizza", "Watermelon", "Salad", "Cheeseburger", "Chicken", "Mango", "Pasta"]
         self._dict = {}
         self._dictID = 0
         # Duration timeElapsed;
         # Instant start = Instant.now();  // time capture -- start
-        self.food_k()
+        self.food_series()
         # Instant end = Instant.now();    // time capture -- end
         # this.timeElapsed = Duration.between(start, end);
 
     """Algorithm for building Fibonacci sequence, this id called from __init__"""
-    def food_k(self):
-        f = [(random.sample((self._foods), k=self._k))]  # fibonacci starting array/list
-        self.set_data(f[0])
-        f = [f[0]]
+    def food_series(self):
+        limit = self._series
+        f = [(random.sample((foodslist1), k=2))]  # fibonacci starting array/list
+        while limit > 0:
+            self.set_data(f[0])
+            f = [f[0]]
+            limit -= 1
 
     """Method/Function to set Fibonacci data: list, dict, and dictID are instance variables of Class"""
     def set_data(self, num):
@@ -36,8 +40,8 @@ class Foods:
 
     """Getters with decorator to allow . notation access"""
     @property
-    def k(self):
-        return self._k
+    def series(self):
+        return self._series
 
     @property
     def list(self):
@@ -55,9 +59,9 @@ class Foods:
 
 if __name__ == "__main__":
     '''Value for testing'''
-    k = 2
+    a = 2
     '''Constructor of Class object'''
-    foodrecs = Foods(k)
+    foodrecs = Foods(a/a)
     print(f"Here are some food recommendations = {foodrecs.list}")
 
 #for i in range(a):
