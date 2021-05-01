@@ -17,3 +17,7 @@ def search():
 
         return render_template("anthonyminilab.html", sportrecs=Sports(k))
     return render_template("anthonyminilab.html", sportrecs=Sports(1))
+
+@gamereview_bp3.route('/bubblesort')
+def bubblesort():
+    return render_template("bubblesort.html")
