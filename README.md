@@ -17,7 +17,7 @@
 | Think about using what you learned in your project (evaluate efficiency) |  I learned the difference between Insertion Sorting(simple sorting algorithm) and Selection Sorting(advanced sorting by sorting an array to its minimum value creating an ascending order from the unsorted part and putting it at the front) and how I can use these sorting on the College Board FRQ Create Task for my portfolio. Since the Create Task requires a list and how it is used I can create a list that is sorted if I can not meet the requirements with my previous code |  |
 
 - Andrew Crisostomo 5/5 verified by Max: The bubble sort lab meets all the criteria. There is an individual section, different data types are being used, an input screen and an action button is involved and the results are displayed through the use of insertion and selection. 
-- 
+
 - Anthony Wilson 5/5 verified by Andrew: The bubble sort lab I created meets all requirements and criteria. I have an individual section you can see through each of our names, and integers and strings were used to create the bubble sort, an input screen and an action button was used and involved, results are shown throught as we used insertion and selection.
 
 - Jaideep Bollu - still trying to get him up to speed
