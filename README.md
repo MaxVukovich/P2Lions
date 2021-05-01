@@ -6,7 +6,7 @@
 
 # Bubble Sort Lab
 
-- | Requirement | Ahmad Nasim 5/5 verified by Anthony's Explanation | |
+| Requirement | Ahmad Nasim 5/5 verified by Anthony's Explanation | |
 | ------------- | ----------- | ----------- |
 |  Build individual section into your Scrum Team project for execution | Done by creating blueprints for the minilabs using buttons and seperate app.py |  |
 |  Build sort using different data types (Characters, Integer, String) | Sorting code was created using characters and integer(#'s in list and #'s used in sorting) |   |
