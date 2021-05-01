@@ -74,4 +74,10 @@ Team Contributes will be found [HERE](https://github.com/MaxVukovich/P2Lions/gra
 
 # Previous Assignments
 
+[Bubble Sort Lab]
+- Ahmad Nasim
+- Andrew Crisostomo 5/5: The bubble sort lab meets all the criteria. There is an individual section, different data types are being used, an input screen and an action button is involved and the results are displayed through the use of insertion and selection. 
+- Max Vucovich
+- Anthony Wilson
+- Jaideep Bollu
 
