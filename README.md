@@ -22,7 +22,7 @@
 
 - Anthony Wilson 5/5 verified by Andrew: The bubble sort lab I created meets all requirements and criteria. I have an individual section you can see through each of our names, and integers and strings were used to create the bubble sort, an input screen and an action button was used and involved, results are shown throught as we used insertion and selection.
 
-- Jaideep Bollu
+- Jaideep Bollu - still trying to get him up to speed
 
 
 <!-- TABLE OF CONTENTS -->
