@@ -6,7 +6,13 @@
 
 # Bubble Sort Lab
 
-- Ahmad Nasim
+- | Requirement | Ahmad Nasim 5/5 verified by Anthony's Explanation | |
+| ------------- | ----------- | ----------- |
+|  Build individual section into your Scrum Team project for execution | Done by creating blueprints for the minilabs using buttons and seperate app.py |  |
+|  Build sort using different data types (Characters, Integer, String) | Sorting code was created using characters and integer(#'s in list and #'s used in sorting) |   |
+|  Build input screen for different types of data and have action button to sort each type | Used an input panel with a run button to sort the list in order and how many times the variable j was used to sort the list until least to greatest |  |
+|  Display sorted results on screen | Used a website called Trinket.io for the embedding/displaying of python code |   |
+| Think about using what you learned in your project (evaluate efficiency) | I discovered how and when to use Insertion Filtering (a simple sorting technique) and Selection Sorting (sophisticated sorting by sorting an array to its minimum amount, constructing an ascending order from the unsorted section, and inserting it front and). A goal for next week is to learn about selection and maybe how to sort string values. |  |
 
 | Requirement | Max Vukovich 5/5 verified by Ahmad's Explanation | |
 | ------------- | ----------- | ----------- |
