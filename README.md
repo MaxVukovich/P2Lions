@@ -4,18 +4,33 @@
 <h3 align="center">Period 2 Lions</h3>
 <h3 align="center">http://70.95.177.55:8080//</h3>
 
-# Links For Crossover Grading
-Here is links to our 
+# Bubble Sort Lab
 
-[Project Plan](https://docs.google.com/document/d/1m9iGs8guf-1QQK8ik5K9iR7KFQmpcG5HrypKmLz7Zn4/edit) 
+- Ahmad Nasim
 
-[Runtime](http://70.95.177.55:8080)
+- Andrew Crisostomo 5/5 verified by Max: The bubble sort lab meets all the criteria. There is an individual section, different data types are being used, an input screen and an action button is involved and the results are displayed through the use of insertion and selection. 
 
-[Scrum Board](https://github.com/MaxVukovich/P2Lions/projects/1?fullscreen=true) 
+- Max Vukovich 5/5 verified by Ifran
 
-[Blueprints](https://github.com/MaxVukovich/P2Lions/tree/main/gamereview)
+Build individual section into your Scrum Team project for execution.
+- In the Max section of our blueprints that is able to be accessed with the menu at the top of the runtime. 
 
-[Anteater Crossover](https://docs.google.com/document/d/1e-wU_aLVDC0_eImSFV63ZdEv87nWCqiWHWl2K7X62tQ/edit)
+Build sort using different data types (Characters, Integer, String)
+- Sorting code was created using characters and integer(#'s in list and #'s used in sorting)
+
+Build input screen for different types of data and have action button to sort each type.
+- Used an input screen with a play button to sort the list in order as well as how many times it sorted to achieve the final sort.
+
+Display sorted results on screen
+- Used an embedded terminal to display results and let the user use the terminal to activate the sort. 
+
+Think about using what you learned in your project (evaluate efficiency).  Look up Insertion and Selection Sort.
+- I learned the difference between Insertion Sorting(simple sorting algorithm) and Selection Sorting(advanced sorting by sorting an array to its minimum value creating an ascending order from the unsorted part and putting it at the front) and how I can use these sorting on the College Board FRQ Create Task for my portfolio. Since the Create Task requires a list and how it is used I can create a list that is sorted if I can not meet the requirements with my previous code. 
+
+- Anthony Wilson 5/5 verified by Andrew: The bubble sort lab I created meets all requirements and criteria. I have an individual section you can see through each of our names, and integers and strings were used to create the bubble sort, an input screen and an action button was used and involved, results are shown throught as we used insertion and selection.
+
+- Jaideep Bollu
+
 
 <!-- TABLE OF CONTENTS -->
 <details open="open">
@@ -74,10 +89,15 @@ Team Contributes will be found [HERE](https://github.com/MaxVukovich/P2Lions/gra
 
 # Previous Assignments
 
-[Bubble Sort Lab]
-- Ahmad Nasim
-- Andrew Crisostomo 5/5 verified by Max: The bubble sort lab meets all the criteria. There is an individual section, different data types are being used, an input screen and an action button is involved and the results are displayed through the use of insertion and selection. 
-- Max Vucovich
-- Anthony Wilson 5/5 veridied by Andrew: The bubble sort lab I created meets all reuirements and criteria. I have an individual section you can see through each of our names, and integers and strings were used to create the bubble sort, an input screen and an action button was used and involved, results are shown throught as we used insertion and selection.
-- Jaideep Bollu
+## Links For Crossover Grading
+Here is links to our 
 
+[Project Plan](https://docs.google.com/document/d/1m9iGs8guf-1QQK8ik5K9iR7KFQmpcG5HrypKmLz7Zn4/edit) 
+
+[Runtime](http://70.95.177.55:8080)
+
+[Scrum Board](https://github.com/MaxVukovich/P2Lions/projects/1?fullscreen=true) 
+
+[Blueprints](https://github.com/MaxVukovich/P2Lions/tree/main/gamereview)
+
+[Anteater Crossover](https://docs.google.com/document/d/1e-wU_aLVDC0_eImSFV63ZdEv87nWCqiWHWl2K7X62tQ/edit)
