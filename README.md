@@ -10,11 +10,10 @@
 
 - Andrew Crisostomo 5/5 verified by Max: The bubble sort lab meets all the criteria. There is an individual section, different data types are being used, an input screen and an action button is involved and the results are displayed through the use of insertion and selection. 
 
-- Max Vukovich 5/5 verified by Ifran
 
-| Requirement | Explanation | |
+| Requirement | Max Vukovich 5/5 verified by Ahmad's Explanation | |
 | ------------- | ----------- | ----------- |
-|  Build individual section into your Scrum Team project for execution | Already done as shown in the Max section of our blueprints that is able to be accessed with the menu at the top of the runtime |  |
+|  Build individual section into your Scrum Team project for execution | Done as shown in the Max section of our blueprints that is able to be accessed with the menu at the top of the runtime |  |
 |  Build sort using different data types (Characters, Integer, String) | Sorting code was created using characters and integer(#'s in list and #'s used in sorting) |   |
 |  Build input screen for different types of data and have action button to sort each type | Used an input screen with a play button to sort the list in order as well as how many times it sorted to achieve the final sort |  |
 |  Display sorted results on screen | Used an embedded terminal to display results and let the user use the terminal to activate the sort |   |
@@ -34,7 +33,7 @@
       <a href="#about-the-project">About The Project</a>
       <ul>
           <li><a href="#getting-started">Getting Started</a><li> 
-          <li><a href="#scrum-board">Scrum Board</a></li>
+          <li><a href="#scrum-board">Scrum Board</a></l
           <li><a href="#contributes">Contributes</a></li>
           <li><a href="#contact">Contact</a></li>
           <li><a href="#map-of-project-to-ap-csp-requirements">Map of project to AP CSP requirements</a></li>
