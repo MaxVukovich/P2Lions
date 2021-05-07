@@ -1,4 +1,6 @@
 from flask import Blueprint, render_template
+
+from gamereview.Ahmad.bubblesort import bubble
 from gamereview.Ahmad.calculator import Games
 from flask import request
 from flask import Flask, render_template, redirect, url_for, request
@@ -11,6 +13,9 @@ from flask_sqlalchemy import SQLAlchemy
 from werkzeug.security import generate_password_hash, check_password_hash
 from flask_login import LoginManager, UserMixin, login_user, login_required, logout_user, current_user
 
+gamereview_bp1 = Blueprint('gamereview1', __name__,
+                           template_folder='templates',
+                           static_folder='static', static_url_path='assets')
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'I<+g/P2N$}0GXO'
@@ -43,9 +48,7 @@ class RegisterForm(FlaskForm):
     email = StringField('email', validators=[InputRequired(), Email(message='Invalid email'), Length(max=50)])
     username = StringField('username', validators=[InputRequired(), Length(min=4, max=15)])
     password = PasswordField('password', validators=[InputRequired(), Length(min=8, max=80)])
-gamereview_bp1 = Blueprint('gamereview1', __name__,
-                          template_folder='templates',
-                          static_folder='static', static_url_path='assets')
+
 
 
 @gamereview_bp1.route('/')
@@ -59,8 +62,10 @@ def search():
         return render_template("games.html", gamerecs=Games(k))
     return render_template("games.html", gamerecs=Games(1))
 
-@gamereview_bp1.route('/bubblesort')
+@gamereview_bp1.route('/bubblesort', methods=['GET', 'POST'])
 def bubbles():
-    return render_template("bubbles.html")
+    if request.form:
+        return render_template("bubbles.html", sort=bubble(request.form.get("var")))
+    return render_template("bubbles.html", sort=bubble("10,9,8,7,6,5,4,3,2,1"))
 
 

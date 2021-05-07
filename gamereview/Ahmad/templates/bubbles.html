@@ -1,3 +1,5 @@
+{% extends 'base.html' %}
+{% block home %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,6 +7,19 @@
     <title>Title</title>
 </head>
 <body>
-<iframe src="https://trinket.io/embed/python/e57377c1d5" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+<div>
+    <form id="bubbleform" action="/Ahmad/bubblesort" method="POST" >
+        <input style="border-radius: 20px" class="col-1" name="var" id="var" type="string">
+        <button style="margin-left: 20px" class="btn btn-primary">Sort!</button>
+    </form>
+</div>
+<h1>{{sort.inputlist}}</h1>
 </body>
+<style>
+body
+{
+  background-image: url(https://www.itl.cat/pngfile/big/230-2305525_lion-background-images-hd.jpg);
+}
+</style>
 </html>
+{% endblock %}

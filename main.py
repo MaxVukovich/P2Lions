@@ -10,6 +10,7 @@ from gamereview.Ahmad.app import gamereview_bp1
 from gamereview.Max.app import gamereview_bp4
 from gamereview.Anthony.app import gamereview_bp3
 from gamereview.Andrew.app import gamereview_bp2
+from gamereview.Jaideep.app import gamereview_bp5
 
 
 app = Flask(__name__)
@@ -17,7 +18,7 @@ app.register_blueprint(gamereview_bp1, url_prefix='/Ahmad')
 app.register_blueprint(gamereview_bp2, url_prefix='/Andrew')
 app.register_blueprint(gamereview_bp3, url_prefix='/Anthony')
 app.register_blueprint(gamereview_bp4, url_prefix='/Max')
-
+app.register_blueprint(gamereview_bp5, url_prefix='/Jaideep')
 @app.route('/')
 def index():
     return render_template("home.html")
