@@ -1,5 +1,6 @@
 from flask import Blueprint, render_template, request
 from gamereview.Andrew.foods import Foods
+from gamereview.Andrew.bubblesort import bubble
 
 gamereview_bp2 = Blueprint('gamereview2', __name__,
                           template_folder='templates',
@@ -19,6 +20,8 @@ def search():
     return render_template("andrewminilab.html", foodrecs=Foods(1))
 
 # bubblesort lab
-@gamereview_bp2.route('/bubblesort')
-def bubbles1():
-    return render_template("bubbles1.html")
+@gamereview_bp2.route('/bubbles1', methods=['GET', 'POST'])
+def bubbles():
+    if request.form:
+        return render_template("bubbles1.html", sort=bubble(request.form.get("var")))
+    return render_template("bubbles1.html", sort=bubble("10,9,8,7,6,5,4,3,2,1"))
