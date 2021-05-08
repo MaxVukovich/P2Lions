@@ -4,10 +4,22 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Max Bubble Sort</title>
+    <title>Max's Bubblesort</title>
 </head>
 <body>
-<iframe src="https://trinket.io/embed/python/4a05c2c51b" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+<div>
+    <form id="bubbleform" action="/Max/bubblesort" method="POST" >
+        <input style="border-radius: 20px" class="col-1" name="var" id="var" type="string">
+        <button style="margin-left: 20px" class="btn btn-primary">Sort!</button>
+    </form>
+</div>
+<h1>{{sort.inputlist}}</h1>
 </body>
+<style>
+body
+{
+  background-image: url(http://selfgrowth.info/photos/best-lion-pictures/cool-lion-photos-without-background4450.jpg);
+}
+</style>
 </html>
 {% endblock %}
