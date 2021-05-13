@@ -25,3 +25,7 @@ def bubbles():
     if request.form:
         return render_template("bubbles1.html", sort=bubble(request.form.get("var")))
     return render_template("bubbles1.html", sort=bubble("10,9,8,7,6,5,4,3,2,1"))
+
+@gamereview_bp2.route('/forum')
+def forum():
+    return render_template("forum.html")
