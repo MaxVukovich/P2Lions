@@ -29,3 +29,7 @@ def bubbles():
 @gamereview_bp2.route('/forum')
 def forum():
     return render_template("forum.html")
+
+@gamereview_bp2.route('/adventuregames')
+def adventuregames():
+    return render_template("adventuregames.html")
