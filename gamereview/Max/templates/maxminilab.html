@@ -9,24 +9,24 @@
 
 
 
-    <div class="jumbotron text-center row bg-danger">
+    <div class="jumbotron text-center row bg-dark">
         <div>
-            <h3 class="text-white">How many show recs do you want? </h3>
+            <h3 class="text-white">How many random games do you want? </h3>
             <form id="fibForm" action="" method="POST" >
-                <p style="color:white;text-align:center;font-family:verdana;">For a show recommendation, just click the get show recommendation button!</p>
+                <p style="color:white;text-align:center;font-family:verdana;">Just input the amount of games you want and click the get games button!</p>
                 <input name="series" id="series" type="number" min="0" max="6" >
-                <button class="btn my-2 my-sm-0 text-white bg-transparent" type="submit"> Get show recommendations!</button>
+                <button class="btn my-2 my-sm-0 text-white bg-success" type="submit"> Get a random game!</button>
 
             </form>
         </div>
 
         <div class="col-md-6">
-            <h3 class="text-white">Here are {{list.series}} show recs!</h3>
+            <h3 class="text-white">Here are {{showrecs.series}} random games!</h3>
             <!-- Number, List table -->
             <table class="mx-auto">
                 <tr>
-                    <th class="text-white" scope="col">{{showrecs.series}} shows: </th>
-                    <th class="text-white" scope="col">{{bubble.list}}</th>
+                    <th class="text-white" scope="col">{{showrecs.series}} random games: </th>
+                    <th class="text-white" scope="col">{{showrecs.list}}</th>
                 </tr>
             </table>
 
@@ -56,7 +56,7 @@
     <style>
 body
 {
-  background-image: url(/static/images/Netflix1.png);
+  background-image: url(https://wallpaperaccess.com/full/1413547.jpg);
 }
 </style>
 

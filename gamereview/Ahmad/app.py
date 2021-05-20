@@ -2,9 +2,7 @@ from flask import Blueprint, render_template
 
 from gamereview.Ahmad.bubblesort import bubble
 from gamereview.Ahmad.calculator import Games
-from flask import request
-from flask import Flask, render_template, redirect, url_for, request
-from flask_bootstrap import Bootstrap
+from flask import Flask, render_template, redirect, url_for, request, session
 from flask_wtf import FlaskForm
 from wtforms import StringField, PasswordField, BooleanField
 from wtforms.validators import InputRequired, Email, Length
@@ -18,22 +16,23 @@ gamereview_bp1 = Blueprint('gamereview1', __name__,
                            static_folder='static', static_url_path='assets')
 
 app = Flask(__name__)
-app.config['SECRET_KEY'] = 'I<+g/P2N$}0GXO'
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///logindatabase.db'
+
+app.config['SECRET_KEY'] = 'I<+g/P2N$}0GXOf'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///database.db'
 db = SQLAlchemy(app)
 login_manager = LoginManager()
 login_manager.init_app(app)
-# IMPORTANT - GENERATES CSRF TOKEN
 csrf = CSRFProtect(app)
 csrf.init_app(app)
 login_manager.login_view = 'login'
 
-
-class User(UserMixin, db.Model): #Creates columns inside of the database
+class User(UserMixin, db.Model):
     id = db.Column(db.Integer, primary_key=True)
-    username = db.Column(db.String(15), unique=True) #username column
-    email = db.Column(db.String(50), unique=True) #email column
-    password = db.Column(db.String(80)) #password column
+    username = db.Column(db.String(15), unique=True)
+    email = db.Column(db.String(50), unique=True)
+    password = db.Column(db.String(80))
+
+
 
 @login_manager.user_loader
 def load_user(user_id):
@@ -67,5 +66,44 @@ def bubbles():
     if request.form:
         return render_template("bubbles.html", sort=bubble(request.form.get("var")))
     return render_template("bubbles.html", sort=bubble("10,9,8,7,6,5,4,3,2,1"))
+
+@gamereview_bp1.route('/login', methods=['GET', 'POST'])
+def login():
+    form = LoginForm()
+
+    if form.validate_on_submit():
+        user = User.query.filter_by(username=form.username.data).first()
+        if user:
+            if check_password_hash(user.password, form.password.data):
+                login_user(user, remember=form.remember.data)
+                return redirect(url_for('dashboard'))
+
+        return redirect(url_for('login'))
+
+    return render_template('login.html', form=form)
+
+@gamereview_bp1.route('/signup', methods=['GET', 'POST'])
+def signup():
+    form = RegisterForm()
+
+    if form.validate_on_submit():
+        hashed_password = generate_password_hash(form.password.data, method='sha256')
+        new_user = User(username=form.username.data, email=form.email.data, password=hashed_password)
+        db.session.add(new_user)
+        db.session.commit()
+        return redirect(url_for('login'))
+    return render_template('signup.html', form=form)
+
+
+@gamereview_bp1.route('/dashboard')
+@login_required
+def dashboard():
+    return render_template('dashboard.html', name=current_user.username)
+
+@gamereview_bp1.route('/logout')
+@login_required
+def logout():
+    logout_user()
+    return redirect(url_for('home'))
 
 

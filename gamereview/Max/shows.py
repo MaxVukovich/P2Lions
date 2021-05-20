@@ -9,7 +9,7 @@ class Shows:
             raise ValueError("k must be between 2 and 10")
         self._k = k
         self._list = []
-        self._shows = ["The Flash,", "Arrow", "The Hundred", "Breaking Bad", "Money Heist", "Grey's Anatomy", "Cobra Kai", "Gotham"]
+        self._shows = ["Fortnite,", "Minecraft", "Overwatch", "Sub-Rosa", "Cold War", "Fall Guys", "Warzone", "MW2"]
         self._dict = {}
         self._dictID = 0
         # Duration timeElapsed;
