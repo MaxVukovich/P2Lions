@@ -11,6 +11,7 @@ gamereview_bp4 = Blueprint('gamereview4', __name__,
 def index():
     return render_template("maxhome.html")
 
+
 @gamereview_bp4.route('/maxminilab', methods=['GET', 'POST'])
 def search():
     if request.method == 'POST':
