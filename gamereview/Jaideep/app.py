@@ -10,6 +10,7 @@ gamereview_bp5 = Blueprint('gamereview5', __name__,
 def index():
     return render_template("jaideep.html")
 
+
 @gamereview_bp5.route('/bubble2', methods=['GET', 'POST'])
 def bubble():
     if request.form:

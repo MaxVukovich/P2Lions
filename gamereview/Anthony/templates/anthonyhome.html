@@ -1,7 +1,7 @@
-
 <!DOCTYPE html>
 <html lang="en">
-
+{% extends 'anthonybase.html' %}
+{% block home %}
 
 <html>
 <body class="home-bg">
@@ -13,37 +13,40 @@
 
 </div>
 
-<div class="container mt-3">
-
-    <div class="media border p-3">
-        <img src="https://wallpapercave.com/wp/wp3591841.jpg" class="mr-3 mt-3 rounded-circle" style="width:600px;">
-        <div class="media-body">
-            <h1>Madden 21 <small><i> Made in 2020</i></small></h1>
-            <p>Madden is a video game based on the American NFL, where players can play Football on their console.</p>
-        </div>
-        <div class="container mt-3">
-
-            <div class="media border p-3">
-                <img src="https://wallpapercave.com/wp/wp2375304.jpg" class="mr-3 mt-3 rounded-circle" style="width:600px;">
-                <div class="media-body">
-                    <h1>FIFA 21 <small><i> Made in 2020</i></small></h1>
-                    <p>Fifa is a video game based on Soccer that includes soccer teams from all over the world with different game modes that the user can explore that are soccer-related.</p>
-                </div>
-                <div class="container mt-3">
-
-                    <div class="media border p-3">
-                        <img src="https://wallpaperaccess.com/full/1440418.jpg" class="mr-3 mt-3 rounded-circle" style="width:600px;">
-                        <div class="media-body">
-                            <h1>NBA 2k21 <small><i> Made in 2020</i></small></h1>
-                            <p>NBA 2K is a video game based on the American basketball league, the NBA,where the user can explore different game modes that are basketball related and play with their favorite teams/players.</p>
-                        </div>
-
+<!-- Media top -->
+<div class="media">
+    <img src="https://wallpapercave.com/wp/wp3591841.jpg" class="mr-3 mt-3 rounded-circle" style="width:500px;">
+    <div class="media-body">
+        <h1>Madden 21</h1>
+        <h1><small><i>Made in 2020</i></small></h1>
+        <p>Madden is a video game based on the American NFL, where players can play Football on their console.</p>
+    </div>
 </div>
-<style>
 
+<!-- Media middle -->
+<div class="media">
+    <img src="https://wallpapercave.com/wp/wp2375304.jpg" class="mr-3 mt-3 rounded-circle" style="width:500px">
+    <div class="media-body">
+        <h1>Fifa 21<h1>
+            <h1><small><i> Made in 2020</i></small></h1>
+            <p>Fifa is a video game based on Soccer that includes soccer teams from all over the world with different game modes that the user can explore that are soccer-related.</p>
+    </div>
+</div>
+
+<!-- Media bottom -->
+<div class="media">
+    <img src="https://wallpaperaccess.com/full/1440418.jpg" class="mr-3 mt-3 rounded-circle" style="width:500px">
+    <div class="media-body">
+        <h1>NBA 2k21<h1>
+            <h1> <small><i> Made in 2020</i></small></h1>
+            <p>NBA 2K is a video game based on the American basketball league, the NBA,where the user can explore different game modes that are basketball related and play with their favorite teams/players.</p>
+    </div>
+</div>
+
+<style>
 body
 {
-background-image: url(https://cdn.wallpapersafari.com/86/22/l1Ie2N.jpg);
+    background-image: url(https://cdn.wallpapersafari.com/86/22/l1Ie2N.jpg);
 }
 
 </style>
@@ -51,5 +54,5 @@ background-image: url(https://cdn.wallpapersafari.com/86/22/l1Ie2N.jpg);
 
 </body>
 </html>
-
+{% endblock %}
 

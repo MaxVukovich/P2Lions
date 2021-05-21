@@ -11,6 +11,10 @@ gamereview_bp3 = Blueprint('gamereview3', __name__,
 def index():
     return render_template("anthonyhome.html")
 
+@gamereview_bp3.route('/GameOfTheMonthForm')
+def gamemonth():
+    return render_template("GameOfTheMonthForm.html")
+
 @gamereview_bp3.route('/anthonyminilab', methods=['GET', 'POST'])
 def search():
     if request.method == 'POST':

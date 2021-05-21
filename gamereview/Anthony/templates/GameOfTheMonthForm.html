@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+{% extends 'anthonybase.html' %}
+{% block home %}
+
 <head>
     <title>Bootstrap Example</title>
     <meta charset="utf-8">
@@ -28,7 +31,7 @@
 
 <div class="container mt-3">
     <center><h1 style="color:black;font-size:100px;margin-top:10px;"><a style="text-decoration:none;color:black;cursor:text;">Game of the Month</a></h1></center</h1>
-    <h2>Destiny 2</h2>
+    <h1>Destiny 2</h1>
     <p>Destiny 2 came out in 2017 and was a hit. It had a great campaign and great multiplayer features. After a year or so, the game began to die off until it became free for all users which made users hop back on the great game. That did not take away from its great graphics and game development!</p>
 
     <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="2000" data-pause="hover">
@@ -87,10 +90,14 @@
     <label for="fname">First name:</label><br>
     <input type="text" id="fname" name="fname"><br>
     <label for="lname">What is your Game of the Month?</label><br>
-    <input type="text" id="lname" name="lname">
-    <input type="submit" value="Submit">
+    <input type="text" id="lname" name="lname"><br>
+    <br><input type="submit" value="Submit">
     </center>
 </form>
+
+ &nbsp;&nbsp;
+
+
 <style>
 body
 {
@@ -100,3 +107,4 @@ body
 
 </body>
 </html>
+{% endblock %}
