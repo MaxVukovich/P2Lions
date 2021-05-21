@@ -1,0 +1,60 @@
+{% extends 'ahmadbase.html' %}
+{% block home %}
+<!DOCTYPE HTML>
+<html>
+<head>
+    <style>
+#div1 {
+  width: 200px;
+  height: 150px;
+  padding: 10px;
+  border: 1px solid #aaaaaa;
+}
+</style>
+    <script>
+function allowDrop(ev) {
+  ev.preventDefault();
+}
+
+function drag(ev) {
+  ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function drop(ev) {
+  ev.preventDefault();
+  var data = ev.dataTransfer.getData("text");
+  ev.target.appendChild(document.getElementById(data));
+}
+</script>
+</head>
+<body>
+
+<h1 class="text-white"> Rate your Top 5 Games By Dragging the Images! </h1>
+
+
+
+<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<br>
+
+<br>
+<img id="drag3" src="https://akm-img-a-in.tosshub.com/sites/btmt/images/stories/pubg_game_660_301220123353.jpg" draggable="true" ondragstart="drag(event)" width="200" height="150">
+<img id="drag4" src="https://cdn2.unrealengine.com/battle-pass-chapter-2-season-6-1920x1080-dc8eb73dc494.jpg" draggable="true" ondragstart="drag(event)" width="200" height="150">
+<img id="drag5" src="https://static.bhphotovideo.com/explora/sites/default/files/styles/top_shot/public/ts-apex-legends-free-to-play-battle-royale_0.jpg?itok=mISX6TSE" draggable="true" ondragstart="drag(event)" width="200" height="150">
+<img id="drag1" src="https://img.redbull.com/images/c_fill,w_1500,h_1000,g_auto,f_auto,q_auto/redbullcom/2018/12/14/7518db4d-58a6-4868-aa3c-748ad1dd6dd7/brawl-stars" draggable="true" ondragstart="drag(event)" width="200" height="150">
+<img id="drag2" src="https://img.etimg.com/thumb/msid-75097490,width-1200,height-900,imgsize-545771,overlay-etpanache/photo.jpg" draggable="true" ondragstart="drag(event)" width="200" height="150">
+<img id="drag6" src="https://i.ytimg.com/vi/tmWwGP5mROg/maxresdefault.jpg" draggable="true" ondragstart="drag(event)" width="200" height="150">
+<img id="drag7" src="https://assets-cdn.daybreakgames.com/uploads/dcsclient/000/000/209/841.jpg?v=1.0" draggable="true" ondragstart="drag(event)" width="200" height="150">
+<img id="drag8" src="https://cdn.cloudflare.steamstatic.com/steam/apps/813820/capsule_616x353.jpg?t=1593100106" draggable="true" ondragstart="drag(event)" width="200" height="150">
+<style>
+body
+{
+  background-image: url(https://i.redd.it/1n9i9bz3vnu21.jpg);
+}
+</style>
+</body>
+</html>
+{% endblock %}
