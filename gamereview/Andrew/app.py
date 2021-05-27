@@ -33,3 +33,7 @@ def forum():
 @gamereview_bp2.route('/adventuregames')
 def adventuregames():
     return render_template("adventuregames.html")
+
+@gamereview_bp2.route('/ratings')
+def rating():
+    return render_template("andrewrating.html")

@@ -1,0 +1,60 @@
+{% extends 'andrewbase.html' %}
+{% block home %}
+<!DOCTYPE HTML>
+<html>
+<head>
+    <style>
+#div1 {
+  width: 200px;
+  height: 150px;
+  padding: -5px;
+  border: 1px solid #aaaaaa;
+}
+</style>
+    <script>
+function allowDrop(ev) {
+  ev.preventDefault();
+}
+
+function drag(ev) {
+  ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function drop(ev) {
+  ev.preventDefault();
+  var data = ev.dataTransfer.getData("text");
+  ev.target.appendChild(document.getElementById(data));
+}
+</script>
+</head>
+<body>
+
+<h1 class="text-white"> Rate your Top 5 Games By Dragging the Images! </h1>
+
+
+
+<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<br>
+
+<br>
+<img id="drag3" src="http://i.ytimg.com/vi/yUnsOEh6PVc/maxresdefault.jpg" draggable="true" ondragstart="drag(event)" width="200" height="150">
+<img id="drag4" src="https://wallpapercave.com/wp/wp245065.jpg" draggable="true" ondragstart="drag(event)" width="200" height="150">
+<img id="drag5" src="https://www.wallpaperu3.com/wp-content/mywallpapers/assassins-creed-movie-wallpaper.jpg" draggable="true" ondragstart="drag(event)" width="200" height="150">
+<img id="drag1" src="https://wallpapercave.com/wp/wp1811276.jpg" draggable="true" ondragstart="drag(event)" width="200" height="150">
+<img id="drag2" src="https://wallpapercave.com/wp/wp2614445.jpg" draggable="true" ondragstart="drag(event)" width="200" height="150">
+<img id="drag6" src="https://wallpapercave.com/wp/4ZvLAPc.jpg" draggable="true" ondragstart="drag(event)" width="200" height="150">
+<img id="drag7" src="https://hdqwalls.com/wallpapers/2016-horizon-zero-dawn-new.jpg" draggable="true" ondragstart="drag(event)" width="200" height="150">
+<img id="drag8" src="https://wallpapercave.com/wp/wp2610594.jpg" draggable="true" ondragstart="drag(event)" width="200" height="150">
+<style>
+body
+{
+  background-image: url(https://www.pixelstalk.net/wp-content/uploads/2016/05/Free-Really-Cool-Wallpapers.jpg);
+}
+</style>
+</body>
+</html>
+{% endblock %}

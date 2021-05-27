@@ -37,7 +37,7 @@ def bubbles():
 
 @gamereview_bp1.route('/rating')
 def rating():
-    return render_template("rating.html")
+    return render_template("andrewrating.html")
 
 
 
