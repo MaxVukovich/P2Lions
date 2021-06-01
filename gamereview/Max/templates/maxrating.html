@@ -5,6 +5,27 @@
 <head>
     <title>Shooter</title>
 
+    <!--
+    <?php //
+			session_start();
+
+			if(!isset($_SESSION['sess_user '])) {
+				header("location:login.php");
+		}
+		?>
+    <?php
+include("config.php");
+
+$array = $_POST['listnumber'];
+$x = 1;
+foreach ($array as $key => $value) {
+    $query = "UPDATE dragdrop SET listnumber = ". $x . "WHERE id = " .      $value;
+    mysql_query($query) or die(mysql_error());
+    $x ++;
+    }
+    echo 'Saved';
+    -->
+
 <div class="hometext">
         <center><h1 style="color:white;font-size:100px;margin-top:10px;"><a style="text-decoration:none;color:white;cursor:text;">Competitive Shooter Tier List</a></h1></center>
     <center style="color:white"<p>Drag and Drop what your favorite games are from top to bottom!</p><center>
