@@ -1,0 +1,66 @@
+<CATALOG>
+    <CD>
+        <GPU>NVIDIA GTX 960 2gb</GPU>
+        <Game>PUBG</Game>
+        <COUNTRY>USA</COUNTRY>
+        <COMPANY>Columbia</COMPANY>
+        <PRICE>10.90</PRICE>
+        <YEAR>1985</YEAR>
+    </CD>
+    <CD>
+        <GPU>NVIDIA GTX 660</GPU>
+        <Game>Fortnite</Game>
+        <COUNTRY>UK</COUNTRY>
+        <COMPANY>CBS Records</COMPANY>
+        <PRICE>9.90</PRICE>
+        <YEAR>1988</YEAR>
+    </CD>
+    <CD>
+        <GPU>NVIDIA GTX 970</GPU>
+        <Game>APEX</Game>
+        <COUNTRY>USA</COUNTRY>
+        <COMPANY>RCA</COMPANY>
+        <PRICE>9.90</PRICE>
+        <YEAR>1982</YEAR>
+    </CD>
+    <CD>
+        <GPU>None(Iphone or Android)</GPU>
+        <Game>Brawl Stars</Game>
+        <COUNTRY>UK</COUNTRY>
+        <COMPANY>Virgin records</COMPANY>
+        <PRICE>10.20</PRICE>
+        <YEAR>1990</YEAR>
+    </CD>
+    <CD>
+        <GPU>NVIDIA GTX 970</GPU>
+        <Game>Warzone</Game>
+        <COUNTRY>EU</COUNTRY>
+        <COMPANY>BMG</COMPANY>
+        <PRICE>9.90</PRICE>
+        <YEAR>1997</YEAR>
+    </CD>
+    <CD>
+        <GPU>None(PS4 or Xbox)</GPU>
+        <Game>Fall Guys</Game>
+        <COUNTRY>UK</COUNTRY>
+        <COMPANY>Polydor</COMPANY>
+        <PRICE>10.90</PRICE>
+        <YEAR>1998</YEAR>
+    </CD>
+    <CD>
+        <GPU>GTX 560</GPU>
+        <Game>H1Z1</Game>
+        <COUNTRY>UK</COUNTRY>
+        <COMPANY>CBS</COMPANY>
+        <PRICE>8.10</PRICE>
+        <YEAR>1973</YEAR>
+    </CD>
+    <CD>
+        <GPU>GTX 555</GPU>
+        <Game>Realm Royale</Game>
+        <COUNTRY>UK</COUNTRY>
+        <COMPANY>Pickwick</COMPANY>
+        <PRICE>8.50</PRICE>
+        <YEAR>1990</YEAR>
+    </CD>
+</CATALOG>
