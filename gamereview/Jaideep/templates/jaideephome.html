@@ -1,13 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<style>
+*{
+    margin: 0;
+    padding: 0;
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+    color: #54549e;
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+    color: #54549e;
+}
+</style>
 
 <html>
 <body class="home-bg">
 
-
 <div class="hometext">
   <center><h1 style="color:black;font-size:125px;margin-top:10px;"><a style="text-decoration:none;color:black;cursor:text;">Racing</a></h1></center>
+
+  <html>
+  <head>
+    <style>
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+</style>
+  </head>
+  <body>
+
+  <h2>Links to Official Sites</h2>
+  <p>These are links to the official sites for Rocket League, Mario Cart, and Need for Speed:</p>
+
+  <div class="row">
+    <h3>Rocket League</h3>
+    <p><a href="https://www.rocketleague.com/">Rocket League</a></p>
+    <h3>Mario Cart</h3>
+    <p><a href="https://mariokart8.nintendo.com/">Mario Cart</a></p>
+    <h3>Need for Speed</h3>
+    <p><a href="https://www.ea.com/games/need-for-speed">Need For Speed</a></p>
+  </div>
+
+  </body>
+  &nbsp;&nbsp;
+  </html>
 
 
 </div>
@@ -17,28 +72,62 @@
   <div class="media border p-3">
     <img src="https://wallpapercave.com/wp/wp8096325.jpg" class="mr-3 mt-3 rounded-circle" style="width:600px;">
     <div class="media-body">
-      <h1>Rocket League </i></small></h1>
+      <h1>Rocket League </i><div class="rate">
+        <input type="radio" id="star5" name="rate" value="5" />
+        <label for="star5" title="text">5</label>
+        <input type="radio" id="star4" name="rate" value="4" />
+        <label for="star4" title="text">4</label>
+        <input type="radio" id="star3" name="rate" value="3" />
+        <label for="star3" title="text">3</label>
+        <input type="radio" id="star2" name="rate" value="2" />
+        <label for="star2" title="text">2</label>
+        <input type="radio" id="star1" name="rate" value="1" />
+        <label for="star1" title="text">1</label>
+      </div></small></h1>
       <p>Rocket League is a game developed and published by Psyonix in which two teams of rocket powered vehicles play soccer and attmept to score goals in the opponents goal</p>
     </div>
     <div class="container mt-3">
+    &nbsp;&nbsp;
+  <div class="media border p-3">
+     <img src="https://wallpapercave.com/uwp/uwp28955.jpeg" class="mr-3 mt-3 rounded-circle" style="width:600px;">
+     <div class="media-body">
+       <h1>Mario Kart </i><div class="rate">
+         <input type="radio" id="star5" name="rate" value="5" />
+         <label for="star5" title="text">5</label>
+         <input type="radio" id="star4" name="rate" value="4" />
+         <label for="star4" title="text">4</label>
+         <input type="radio" id="star3" name="rate" value="3" />
+         <label for="star3" title="text">3</label>
+         <input type="radio" id="star2" name="rate" value="2" />
+         <label for="star2" title="text">2</label>
+         <input type="radio" id="star1" name="rate" value="1" />
+         <label for="star1" title="text">1</label>
+       </div></small></h1>
+       <p>Mario Kart is a game developed and published by Nintendo in which the user races against a computer an other users in an attmept to complete the circuits before the others</p>
+     </div>
+     <div class="container mt-3">
+     &nbsp;&nbsp;
+  <div class="media border p-3">
+     <img src="https://wallpapercave.com/uwp/uwp945630.jpeg" class="mr-3 mt-3 rounded-circle" style="width:600px;">
+     <div class="media-body">
+        <h1>Need for Speed </i><div class="rate">
+          <input type="radio" id="star5" name="rate" value="5" />
+          <label for="star5" title="text">5</label>
+          <input type="radio" id="star4" name="rate" value="4" />
+          <label for="star4" title="text">4</label>
+          <input type="radio" id="star3" name="rate" value="3" />
+          <label for="star3" title="text">3</label>
+          <input type="radio" id="star2" name="rate" value="2" />
+          <label for="star2" title="text">2</label>
+          <input type="radio" id="star1" name="rate" value="1" />
+          <label for="star1" title="text">1</label>
+        </div></small></h1>
+        <p>Need for Speed is a game developed by Criterion Games and published by Electronic Arts which centers around street racing and the users have to complete many different races and escape the law enforcement in game</p>
+     </div>
+    &nbsp;&nbsp;
+</div>
 
-      <div class="media border p-3">
-        <img src="https://wallpapercave.com/uwp/uwp28955.jpeg" class="mr-3 mt-3 rounded-circle" style="width:600px;">
-        <div class="media-body">
-          <h1>Mario Kart </i></small></h1>
-          <p>Mario Kart is a game developed and published by Nintendo in which the user races against a computer an other users in an attmept to complete the circuits before the others</p>
-        </div>
-        <div class="container mt-3">
-
-          <div class="media border p-3">
-            <img src="https://wallpapercave.com/uwp/uwp945630.jpeg" class="mr-3 mt-3 rounded-circle" style="width:600px;">
-            <div class="media-body">
-              <h1>Need for Speed </i></small></h1>
-              <p>Need for Speed is a game developed by Criterion Games and published by Electronic Arts which centers around street racing and the users have to complete many different races and escape the law enforcement in game</p>
-            </div>
-
-          </div>
-          <style>
+<style>
 
 body
 {
