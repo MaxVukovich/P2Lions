@@ -33,7 +33,7 @@ function myFunction(xml) {
   var xmlDoc = xml.responseXML;
   var table="<tr><th>Game</th><th>GPU</th></tr>";
   var x = xmlDoc.getElementsByTagName("CD");
-  for (i = 0; i <x.length; i++) { 
+  for (i = 0; i <x.length; i++) {
     table += "<tr><td>" +
     x[i].getElementsByTagName("Game")[0].childNodes[0].nodeValue +
     "</td><td>" +
@@ -54,4 +54,10 @@ function myFunction(xml) {
 
 
 </body>
+<style>
+body
+{
+  background-image: url(https://cdn.statically.io/img/www.wallpaperflare.com/static/4/126/436/simple-simple-background-minimalism-video-game-characters-wallpaper.jpg);
+}
+</style>
 </html>
