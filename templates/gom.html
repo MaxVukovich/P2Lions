@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-{% extends 'anthonybase.html' %}
+{% extends 'base.html' %}
 {% block home %}
 
 <head>
@@ -85,17 +85,24 @@
 <body>
 <h1><center></center></h1><h2 style="margin-top:45px"><center> Votes For June Are Open!</center></h2>
     <p>Participate in June's game of the month submit your vote down here!</center</p>
-<form><center>
-
-    <label for="fname">First name:</label><br>
-    <input type="text" id="fname" name="fname"><br>
-    <label for="lname">What is your Game of the Month?</label><br>
-    <input type="text" id="lname" name="lname"><br>
-    <br><input type="submit" value="Submit">
-    </center>
+<form action="{{ url_for('gamesrom') }}" method="POST">
+    <input type="hidden" name="csrf_token" value="{{ csrf_token() }}" />
+    <label for="name">First name:</label>
+    <br><input
+        type="text"
+        name="name"
+        required
+        placeholder="First Name"
+/>
+    <label for="game">What is your Game of the Month?</label>
+    <br><input
+        type="text"
+        name="game"
+        required
+        placeholder="Game of the Month"
+/>
+    <br><input class="btn2" style="margin-top:10px;" type="submit" />
 </form>
-
- &nbsp;&nbsp;
 
 
 <style>
