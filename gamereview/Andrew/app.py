@@ -37,3 +37,7 @@ def adventuregames():
 @gamereview_bp2.route('/ratings')
 def rating():
     return render_template("andrewrating.html")
+
+@gamereview_bp2.route('/upcominggames')
+def upcominggames():
+    return render_template("upcominggames.html")

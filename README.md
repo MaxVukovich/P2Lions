@@ -4,6 +4,15 @@
 <h3 align="center">Period 2 Lions</h3>
 <h3 align="center">http://70.95.177.55:8080//</h3>
 
+# Project Checkpoint
+Stage is set for the usage of API's and databases. 
+
+Past weeks were made creating the front end and routes but now it's time to introduce the multiple API's we've been researching
+
+For example, 
+
+Tickets are being created for using Api's and databases such as [Crossover Api](https://github.com/MaxVukovich/P2Lions/projects/1), [Theme Api](), and [User inputted Databases](https://github.com/MaxVukovich/P2Lions/issues/11)
+
 # Bubble Sort Lab
 
 | Requirement | Ahmad Nasim 5/5 verified by Anthony's Explanation | |

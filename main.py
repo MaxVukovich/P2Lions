@@ -11,12 +11,13 @@ from flask_wtf.csrf import CSRFProtect, CSRFError
 from flask_sqlalchemy import SQLAlchemy
 from werkzeug.security import generate_password_hash, check_password_hash
 from flask_login import LoginManager, UserMixin, login_user, login_required, logout_user, current_user
-from flask import Flask, render_template, redirect, url_for, request, session
+from flask import Flask, render_template, redirect, url_for, request, session, jsonify
 from gamereview.Ahmad.app import gamereview_bp1
 from gamereview.Max.app import gamereview_bp4
 from gamereview.Anthony.app import gamereview_bp3
 from gamereview.Andrew.app import gamereview_bp2
 from gamereview.Jaideep.app import gamereview_bp5
+
 
 
 
@@ -40,6 +41,12 @@ class User(UserMixin, db.Model):
     username = db.Column(db.String(15), unique=True)
     email = db.Column(db.String(50), unique=True)
     password = db.Column(db.String(80))
+
+class GameReview(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    name = db.Column(db.String(100), nullable=False)
+    game = db.Column(db.String(100), nullable=False)
+
 @login_manager.user_loader
 def load_user(user_id):
     return User.query.get(int(user_id))
@@ -94,6 +101,23 @@ def dashboard():
 def logout():
     logout_user()
     return redirect(url_for('index'))
+
+@app.route('/gameofthemonth', methods=['GET', 'POST'])
+def gamesrom():
+    name = request.form.get("name", 'Vote for Your Game of The Month')
+    game = request.form.get("game", 'Vote for Your Game of The Month')
+    gr = GameReview(name=name, game=game)
+    db.session.add(gr)
+    db.session.commit()
+    return render_template("gom.html")
+@app.route('/all_reviews', methods=['GET'])
+def all_reviews():
+    game_list = GameReview.query.all()
+    games = []
+    for entry in game_list:
+        games.append({'name': entry.name, 'game': entry.game})
+    response = jsonify({'all_reviews': games})
+    return response, 200
 
 if __name__ == "__main__":
     # runs the application on the repl development server
