@@ -5,7 +5,7 @@
 <h3 align="center">http://70.95.177.55:8080//</h3>
 
 # Pre-Final Project Checkpoint
-API's and Databases are now being created and are lining up with previous HTML Pages such as Game Of The Month API and Crossover API.
+API's and Databases are now being created and are lining up with previous HTML Pages such as [Game Of The Month API](https://github.com/MaxVukovich/P2Lions/projects/1#card-62300009) and [Crossover API](https://github.com/MaxVukovich/P2Lions/projects/1#card-62262051).
 
 All that is left is the refining of small details for the final turn in.
 
