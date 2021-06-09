@@ -4,7 +4,7 @@
 <h3 align="center">Period 2 Lions</h3>
 <h3 align="center">http://70.95.177.55:8080//</h3>
 
-# Pre-Project Checkpoint
+# Pre-Final Project Checkpoint
 API's and Databases are now being created and are lining up with previous HTML Pages such as Game Of The Month API and Crossover API.
 
 All that is left is the refining of small details for the final turn in.
