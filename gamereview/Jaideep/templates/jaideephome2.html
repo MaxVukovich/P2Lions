@@ -1,0 +1,132 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <style>
+#div1 {
+  width: 100px;
+  height: 100px;
+  padding: 10px;
+  border: 1px solid #aaaaaa;
+}
+
+#div2 {
+  width: 400px;
+  height: 225px;
+  padding: 10px;
+  border: 1px solid #aaaaaa;
+}
+</style>
+
+  <style>
+.hide {
+  display: none;
+}
+
+.myDIV:hover + .hide {
+  display: block;
+  color: blue;
+}
+</style>
+
+  <script>
+function allowDrop(ev) {
+  ev.preventDefault();
+}
+
+function drag(ev) {
+  ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function drop(ev) {
+  ev.preventDefault();
+  var data = ev.dataTransfer.getData("text");
+  ev.target.appendChild(document.getElementById(data));
+}
+</script>
+</head>
+<body>
+
+<p>Game and Character Ranking System:</p>
+<form action="/bin/" method="post">
+  <table border="1" width="90%" align="top">
+    <tr>
+      <td><h2>Mario Cart</h2>
+        <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)" ></div>
+        <br>
+        <img id="drag1" draggable="true" ondragstart="drag(event)" src="https://wallpapercave.com/uwp/uwp941577.jpeg" class="mr-3 mt-3 rounded-circle" style="width:80px;">
+        <div id="divA1" ondrop="drop(event)" ondragover="allowDrop(event)" ></div>
+        <br>
+        <img id="dragA1" draggable="true" ondragstart="drag(event)" src="https://wallpapercave.com/wp/wp5584802.png" class="mr-3 mt-3 rounded-circle" style="width:40px;">
+        <div id="divB1" ondrop="drop(event)" ondragover="allowDrop(event)" ></div>
+        <br>
+        <img id="dragB1" draggable="true" ondragstart="drag(event)" src="https://wallpapercave.com/wp/ex0hbd4.jpg" class="mr-3 mt-3 rounded-circle" style="width:90px;">
+        <div id="divC1" ondrop="drop(event)" ondragover="allowDrop(event)" ></div>
+        <br>
+        <img id="dragC1" draggable="true" ondragstart="drag(event)" src="https://wallpapercave.com/wp/wp2666244.jpg" class="mr-3 mt-3 rounded-circle" style="width:100px;">
+        <div id="divD1" ondrop="drop(event)" ondragover="allowDrop(event)" ></div>
+        <br>
+        <img id="dragD1" draggable="true" ondragstart="drag(event)" src="https://wallpapercave.com/wp/Yb1Tp3g.jpg" class="mr-3 mt-3 rounded-circle" style="width:50px;">
+        <div id="divE1" ondrop="drop(event)" ondragover="allowDrop(event)" ></div>
+        <br>
+        <img id="dragE1" draggable="true" ondragstart="drag(event)" src="https://wallpapercave.com/wp/wp6041784.png" class="mr-3 mt-3 rounded-circle" style="width:60px;">
+        <div id="divF1" ondrop="drop(event)" ondragover="allowDrop(event)" ></div>
+        <br>
+        <img id="dragF1" draggable="true" ondragstart="drag(event)" src="https://wallpapercave.com/wp/wp6884184.png" class="mr-3 mt-3 rounded-circle" style="width:60px;">
+        <div id="divG1" ondrop="drop(event)" ondragover="allowDrop(event)" ></div>
+        <br>
+        <img id="dragG1" draggable="true" ondragstart="drag(event)" src="https://wallpapercave.com/wp/p3zSMjH.jpg" class="mr-3 mt-3 rounded-circle" style="width:40px;">
+
+    <td><h2>Links to Character Information</h2>
+        <div class="row">
+        <h3>Mario</h3>
+        <p><a href="https://www.mariowiki.com/Mario">Mario</a></p>
+        <h3>Luigi</h3>
+        <p><a href="https://www.mariowiki.com/Luigi">Luigi</a></p>
+        <h3>Wario</h3>
+        <p><a href="https://www.mariowiki.com/Wario">Wario</a></p></div>
+        <h3>King Boo</h3>
+        <p><a href="https://www.mariowiki.com/King_Boo">King Boo</a></p></div>
+        <h3>Toad</h3>
+        <p><a href="https://www.mariowiki.com/Toad">Toad</a></p></div>
+        <h3>Bowser Jr.</h3>
+        <p><a href="https://www.mariowiki.com/Bowser_Jr.">Bowser Jr.</a></p></div>
+        <h3>Dry Bowser</h3>
+        <p><a href="https://www.mariowiki.com/Dry_Bowser">Dry Bowser</a></p></div>
+        <h3>Koopa Troopa</h3>
+        <p><a href="https://www.mariowiki.com/Koopa_Troopa">Koopa Troopa</a></p></div>
+
+    <td><h2>Mario Cart</h2>
+        <div class="myDIV"><img src="https://wallpapercave.com/uwp/uwp28955.jpeg" class="mr-3 mt-3 rounded-circle" style="width:400px;"></div>
+        <div class="hide">Mario Cart is a series of racing games developed and published by Nintendo in which users compete in races with different
+          characters in an attempt to complete a certain amount of circuits before the other characters. It had first been released in August 27,
+          1992 and it was designed by Shigeru Miyamoto, Hideki Konno, Satoru Iwata, Takashi Tezuka, Tadashi Sugiyama, Yugo Hayashi, and Taku Matoba.</div>
+        <h2>Need for Speed</h2>
+        <div class="myDIV"><img src="https://wallpapercave.com/uwp/uwp945630.jpeg" class="mr-3 mt-3 rounded-circle" style="width:400px;"></div>
+        <div class="hide">Need for Speed is a series of racing games developed by Criterion Games and published by Electronic Arts which centers
+          around street racing and the users have to complete many different races and escape the law enforcement in game. It had first been released in August 31,
+          1994 and it was designed by Electronic Arts, Andy Tudor, and Riley Cooper.</div>
+        <h2>Rocket League</h2>
+        <div class="myDIV"><img src="https://wallpapercave.com/wp/wp8096325.jpg" class="mr-3 mt-3 rounded-circle" style="width:400px;"></div>
+        <div class="hide">Rocket League is a game which was both developed and published by Psyonix in which two teams of rocket powered vehicles play soccer
+          and attmept to score goals in the opponents goal. It had first been released in July 7, 2015. </div>
+        <h2>Forza</h2>
+        <div class="myDIV"><img src="https://wallpapercave.com/wp/wp1905495.jpg" class="mr-3 mt-3 rounded-circle" style="width:400px;"></div>
+        <div class="hide">Forza is a series of stimulation racing games which mainly focuses on profesional racing events and imitates the performance for many
+          real life produced cars. It had first been released in May 3, 2005 and was designed by Ben Thaker-Fell</div>
+
+    <td><h2>Racing Games</h2>
+        <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)" ></div>
+        <br>
+        <img id="drag2" draggable="true" ondragstart="drag(event)" src="https://wallpapercave.com/uwp/uwp28955.jpeg" class="mr-3 mt-3 rounded-circle" style="width:400px;">
+        <div id="divA2" ondrop="drop(event)" ondragover="allowDrop(event)" ></div>
+        <br>
+        <img id="dragA2" draggable="true" ondragstart="drag(event)" src="https://wallpapercave.com/uwp/uwp945630.jpeg" class="mr-3 mt-3 rounded-circle" style="width:400px;">
+        <div id="divB2" ondrop="drop(event)" ondragover="allowDrop(event)" ></div>
+        <br>
+        <img id="dragB2" draggable="true" ondragstart="drag(event)" src="https://wallpapercave.com/wp/wp8096325.jpg" class="mr-3 mt-3 rounded-circle" style="width:400px;">
+        <div id="divC2" ondrop="drop(event)" ondragover="allowDrop(event)" ></div>
+        <br>
+        <img id="dragC2" draggable="true" ondragstart="drag(event)" src="https://wallpapercave.com/wp/wp1905495.jpg" class="mr-3 mt-3 rounded-circle" style="width:400px;">
+    <tr>
+</body>
+</html>
