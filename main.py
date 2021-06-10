@@ -17,7 +17,7 @@ from gamereview.Max.app import gamereview_bp4
 from gamereview.Anthony.app import gamereview_bp3
 from gamereview.Andrew.app import gamereview_bp2
 from gamereview.Jaideep.app import gamereview_bp5
-
+import requests
 
 
 
@@ -110,6 +110,7 @@ def gamesrom():
     db.session.add(gr)
     db.session.commit()
     return render_template("gom.html")
+
 @app.route('/all_reviews', methods=['GET'])
 def all_reviews():
     game_list = GameReview.query.all()
@@ -118,6 +119,16 @@ def all_reviews():
         games.append({'name': entry.name, 'game': entry.game})
     response = jsonify({'all_reviews': games})
     return response, 200
+
+@app.route('/crossover', methods=['GET', 'POST'])
+def crossover():
+    input = request.form.get("crossover", False)
+    if request.method == 'POST':
+        i = requests.get(f"https://p2-anteaters-api.herokuapp.com/todos/{input}")
+        r = i.json()['todos']
+    else:
+        r = "none"
+    return render_template('crossover.html', r=r)
 
 if __name__ == "__main__":
     # runs the application on the repl development server
