@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #330066;
+  font-size: 24px;
+  padding: 16px 24px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+</style>
+
+
+<form action="/bin/" method="post">
+    <table border="1" width="100%" align="center">
+        <tr>
+            <td><h4>Need for Speed Trailer</h4>
+            <iframe style="width:100%" src="https://www.youtube.com/embed/Y5wssYZHVWc" title="YouTube video player"
+            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <td><h4>Rocket League Trailer</h4>
+            <iframe style="width:100%" src="https://www.youtube.com/embed/zjPBq1KR3aA" title="YouTube video player"
+            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <td><h4>Forza Trailer</h4>
+            <iframe style="width:100%" src="https://www.youtube.com/embed/RCRYs7yfeo4" title="YouTube video player"
+            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <td><h4>Mario Cart Trailer</h4>
+            <iframe style="width:100%" src="https://www.youtube.com/embed/tKlRN2YpxRE" title="YouTube video player"
+            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <td><h4>Fortnite Trailer</h4>
+            <iframe style="width:100%" src="https://www.youtube.com/embed/-NycdXYBeG4" title="YouTube video player"
+            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <td><h4>PUBG Trailer</h4>
+            <iframe style="width:100%" src="https://www.youtube.com/embed/YLwCfTA6LCQ" title="YouTube video player"
+            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <tr>
+
+
+<body>
+
+<h1 style="text-align:center">Game Slideshow</h1>
+
+<div class="container">
+    <div class="mySlides">
+        <div class="numbertext">Need for Speed</div>
+        <img src="https://wallpapercave.com/wp/wp5632686.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+        <div class="numbertext">Rocket League</div>
+        <img src="https://wallpapercave.com/wp/wp1854369.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+        <div class="numbertext">Forza</div>
+        <img src="https://wallpapercave.com/wp/wp1905503.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+        <div class="numbertext">Mario Cart</div>
+        <img src="https://wallpapercave.com/wp/JHM12m9.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+        <div class="numbertext">Fortnite</div>
+        <img src="https://wallpapercave.com/wp/wp2399412.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+        <div class="numbertext">PUBG</div>
+        <img src="https://wallpapercave.com/wp/wp9098758.jpg" style="width:100%">
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+
+    <div class="caption-container">
+        <p id="caption"></p>
+    </div>
+
+    <div class="row">
+        <div class="column">
+            <img class="demo cursor" src="https://wallpapercave.com/wp/wp5632686.jpg" style="width:100%" onclick="currentSlide(1)" alt="1 / 6">
+        </div>
+        <div class="column">
+            <img class="demo cursor" src="https://wallpapercave.com/wp/wp1854369.jpg" style="width:100%" onclick="currentSlide(2)" alt="2 / 6">
+        </div>
+        <div class="column">
+            <img class="demo cursor" src="https://wallpapercave.com/wp/wp1905503.jpg" style="width:100%" onclick="currentSlide(3)" alt="3 / 6">
+        </div>
+        <div class="column">
+            <img class="demo cursor" src="https://wallpapercave.com/wp/JHM12m9.jpg" style="width:100%" onclick="currentSlide(4)" alt="4 / 6">
+        </div>
+        <div class="column">
+            <img class="demo cursor" src="https://wallpapercave.com/wp/wp2399412.jpg" style="width:100%" onclick="currentSlide(5)" alt="5 / 6">
+        </div>
+        <div class="column">
+            <img class="demo cursor" src="https://wallpapercave.com/wp/wp9098758.jpg" style="width:100%" onclick="currentSlide(6)" alt="6 / 6">
+        </div>
+    </div>
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+
+</body>
+</html>
