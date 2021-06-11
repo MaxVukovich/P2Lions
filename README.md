@@ -4,14 +4,10 @@
 <h3 align="center">Period 2 Lions</h3>
 <h3 align="center">http://70.95.177.55:8080//</h3>
 
-# Project Checkpoint
-Stage is set for the usage of API's and databases. 
+# Pre-Final Project Checkpoint
+API's and Databases are now being created and are lining up with previous HTML Pages such as [Game Of The Month API](https://github.com/MaxVukovich/P2Lions/projects/1#card-62300009) and [Crossover API](https://github.com/MaxVukovich/P2Lions/projects/1#card-62262051).
 
-Past weeks were made creating the front end and routes but now it's time to introduce the multiple API's we've been researching
-
-For example, 
-
-Tickets are being created for using Api's and databases such as [Crossover Api](https://github.com/MaxVukovich/P2Lions/projects/1), [Theme Api](), and [User inputted Databases](https://github.com/MaxVukovich/P2Lions/issues/11)
+All that is left is the refining of small details for the final turn in.
 
 # Bubble Sort Lab
 

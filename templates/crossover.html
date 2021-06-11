@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+{% block home %}
+<center><h1 style="text-decoration:none;color:white;cursor:text;">Usernames from Crossover Website: Maxx</h1><center>
+    <center><form action="{{ url_for('crossover') }}" method="POST">
+        <input type="hidden" name="csrf_token" value="{{ csrf_token() }}" />
+        <label style="text-decoration:none;color:white;cursor:text;" for="name">Crossover Usernames:</label>
+        <br><input
+            type="text"
+            name="crossover"
+            required
+            placeholder="username"
+    /><center>
+
+        <br><input class="btn2" style="margin-top:10px;" type="submit" />
+    </form>
+        {% if r != "none" %}
+        <div style="color: white">
+            {% for todo in r %}
+            <center><h1 Style="text-decoration:none;color:white;cursor:text;">{{todo.name}}</h1><center>
+                <div>{{todo.completed}}</div>
+                <h2>{{todo.id}}</h2>
+                <p>{{todo.desc}}</p>
+                {% endfor %}
+        </div>{% endif %}
+        <style>
+body
+{
+  background-image: url(https://i.kym-cdn.com/photos/images/original/000/724/035/8f9.jpg);
+}
+</style>
+        {% endblock %}
+
+
+
