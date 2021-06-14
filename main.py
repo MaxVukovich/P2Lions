@@ -100,6 +100,10 @@ def dashboard():
 def individual():
     return render_template("individual.html")
 
+@app.route('/howitismade')
+def how_it_is_made():
+    return render_template("howitismade.html")
+
 @app.route('/logout')
 @login_required
 def logout():
