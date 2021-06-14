@@ -15,6 +15,9 @@ def index():
 def rating():
     return render_template("maxrating.html")
 
+@gamereview_bp4.route('/maxindividual')
+def individual():
+    return render_template("maxindividual.html")
 
 @gamereview_bp4.route('/maxminilab', methods=['GET', 'POST'])
 def search():
