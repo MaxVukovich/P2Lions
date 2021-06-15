@@ -43,5 +43,5 @@ def upcominggames():
     return render_template("upcominggames.html")
 
 @gamereview_bp2.route('/howitismade')
-def upcominggames():
+def howitismade():
     return render_template("howitismade.html")
