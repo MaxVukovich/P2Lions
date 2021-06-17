@@ -32,7 +32,7 @@
 ## API Section (3pt)
 - [API and Receiving](https://lions.nighthawkcodingsociety.com/crossover) 
     - API for crossover is used [here](https://github.com/MaxVukovich/P2Lions/blob/f355678d7990a48fd0ee840285daaa2dcc00b249/main.py#L131-L139)
-    - Own created API for Game of the Month is [here](https://github.com/MaxVukovich/P2Lions/blob/f355678d7990a48fd0ee840285daaa2dcc00b249/main.py#L113-L129)
+    - Lion's created API for Game of the Month is [here](https://github.com/MaxVukovich/P2Lions/blob/f355678d7990a48fd0ee840285daaa2dcc00b249/main.py#L113-L129) with [runtime](https://lions.nighthawkcodingsociety.com/gameofthemonth)
 ## Deployment Section (5pt)
 - How It's Made section 
     - Located in readme, section is labled How Its Made, is what you are currently looking at
