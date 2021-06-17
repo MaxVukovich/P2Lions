@@ -15,6 +15,9 @@
     - A user picks a number of random games they want 
     - Class code picks a random game from a list and randomizes it
     - This relates to the theme as it is the main point of interaction for the the games and class code driven
+- [Game Tier List](https://lions.nighthawkcodingsociety.com/Max/maxrating)
+    - A user can rank their games from least to most favorite
+    - Dragging and dropping images of games into their own section
 - Databases
     - This code shows the database that takes the user input from the sign up page, system requirements page, and Game of the Month page
     - [Link to full code for app.py](https://github.com/MaxVukovich/P2Lions/blob/main/main.py)
