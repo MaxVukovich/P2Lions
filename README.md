@@ -10,6 +10,7 @@
 - [Game Review Page](https://lions.nighthawkcodingsociety.com/Max/)
     - Main page for games
     - User can pick different activies to choose from 
+    - Deployed website overloaded so API's don't work but here's an interactive base option [video](https://youtu.be/AOq9e9UnSWo)
 - [Random Game Generator](https://lions.nighthawkcodingsociety.com/Max/maxminilab) 
     - A user picks a number of random games they want 
     - Class code picks a random game from a list and randomizes it
