@@ -132,7 +132,7 @@ def all_reviews():
 def crossover():
     input = request.form.get("crossover", False)
     if request.method == 'POST':
-        i = requests.get(f"https://p2-anteaters-api.herokuapp.com/todos/{input}")
+        i = requests.get(f"https://antsapi.nighthawkcodingsociety.com/todos/{input}")
         r = i.json()['todos']
     else:
         r = "none"
