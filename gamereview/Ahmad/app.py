@@ -39,10 +39,6 @@ def bubbles():
 def rating():
     return render_template("rating.html")
 
-@gamereview_bp1.route('/gamereq')
-def system():
-    return render_template("systemreq.html")
-
 
 
 
