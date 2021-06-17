@@ -2,7 +2,43 @@
 
 <!-- PROJECT LOGO -->
 <h3 align="center">Period 2 Lions</h3>
-<h3 align="center">http://70.95.177.55:8080//</h3>
+<h3 align="center">https://lions.nighthawkcodingsociety.com/</h3>
+
+# How It's Made
+
+## Theme Section 
+- [Game Review Page](https://lions.nighthawkcodingsociety.com/Max/)
+    - Main page for games
+    - User can pick different activies to choose from 
+- [Random Game Generator](https://lions.nighthawkcodingsociety.com/Max/maxminilab) 
+    - A user picks a number of random games they want 
+    - Class code picks a random game from a list and randomizes it
+    - This relates to the theme as it is the main point of interaction for the the games and class code driven
+- Databases
+    - This code shows the database that takes the user input from the sign up page, system requirements page, and Game of the Month page
+    - [Link to full code for app.py](https://github.com/MaxVukovich/P2Lions/blob/main/main.py)
+    - [Link to login data](https://github.com/MaxVukovich/P2Lions/blob/f355678d7990a48fd0ee840285daaa2dcc00b249/main.py#L24-L91)
+    - [Link to system requirement data](https://github.com/MaxVukovich/P2Lions/blob/f355678d7990a48fd0ee840285daaa2dcc00b249/gamereview/Ahmad/templates/systemreq.html#L20-L44)
+    - [Link for game of the month data](https://github.com/MaxVukovich/P2Lions/blob/f355678d7990a48fd0ee840285daaa2dcc00b249/main.py#L113-L129)
+## Individual Section 
+- Blueprints 
+    - [Each folder](https://github.com/MaxVukovich/P2Lions/tree/main/gamereview) is labled with the corresponding member to indicate their individual blueprint
+- Technicals 
+    - Max: Classes: [Frontend](https://github.com/MaxVukovich/P2Lions/blob/main/gamereview/Max/templates/maxminilab.html)/[Backend](https://github.com/MaxVukovich/P2Lions/blob/main/gamereview/Max/shows.py)/[Runtime](https://lions.nighthawkcodingsociety.com/Max/maxminilab) and Bubbles: [Frontend](https://github.com/MaxVukovich/P2Lions/blob/main/gamereview/Max/templates/maxminilab.html)/[Backend](https://github.com/MaxVukovich/P2Lions/blob/main/gamereview/Max/bubblesort.py)/[Runtime](https://lions.nighthawkcodingsociety.com/Max/bubblesort)
+    - Anthony: Classes: [Frontend](https://github.com/MaxVukovich/P2Lions/blob/main/gamereview/Anthony/templates/anthonyminilab.html)/[Backend](https://github.com/MaxVukovich/P2Lions/blob/main/gamereview/Anthony/sports.py)/[Runtime](https://lions.nighthawkcodingsociety.com/Anthony/anthonyminilab) and Bubbles: [Frontend](https://github.com/MaxVukovich/P2Lions/blob/main/gamereview/Anthony/templates/bubblesort1.html)/[Backend](https://github.com/MaxVukovich/P2Lions/blob/main/gamereview/Anthony/bubblesort.py)/[Runtime](https://lions.nighthawkcodingsociety.com/Anthony/bubblesort1)
+    - Ahmad: Classes: [Frontend](https://github.com/MaxVukovich/P2Lions/blob/main/gamereview/Ahmad/templates/games.html)/[Backend](https://github.com/MaxVukovich/P2Lions/blob/main/gamereview/Ahmad/calculator.py)/[Runtime](https://lions.nighthawkcodingsociety.com/Ahmad/games) and Bubbles: [Frontend](https://github.com/MaxVukovich/P2Lions/blob/main/gamereview/Ahmad/templates/bubbles.html)/[Backend](https://github.com/MaxVukovich/P2Lions/blob/main/gamereview/Ahmad/bubblesort.py)/[Runtime](https://lions.nighthawkcodingsociety.com/Ahmad/bubblesort)
+    - Andrew: Classes: [Frontend]()/[Backend]()/[Runtime](https://lions.nighthawkcodingsociety.com/Andrew/andrewminilab) and Bubbles: [Frontend]()/[Backend]()/[Runtime](https://lions.nighthawkcodingsociety.com/Andrew/bubbles1)
+    - Jaideep : Bubbles: [Frontend](https://github.com/MaxVukovich/P2Lions/blob/main/gamereview/Jaideep/templates/bubble2.html)/[Backend](https://github.com/MaxVukovich/P2Lions/blob/main/gamereview/Jaideep/bubble.py)/[Runtime](https://lions.nighthawkcodingsociety.com/Jaideep/bubble2)
+## API Section (3pt)
+- [API and Receiving](https://lions.nighthawkcodingsociety.com/crossover) 
+    - API for crossover is used [here](https://github.com/MaxVukovich/P2Lions/blob/f355678d7990a48fd0ee840285daaa2dcc00b249/main.py#L131-L139)
+    - Own created API for Game of the Month is [here](https://github.com/MaxVukovich/P2Lions/blob/f355678d7990a48fd0ee840285daaa2dcc00b249/main.py#L113-L129)
+## Deployment Section (5pt)
+- How It's Made section 
+    - Located in readme, section is labled How Its Made, is what you are currently looking at
+- Commercial (+2pt)
+    - [Link to video](https://www.youtube.com/watch?v=XnYaSJoKWxE&ab_channel=Purplebears)
+
 
 # Pre-Final Project Checkpoint
 API's and Databases are now being created and are lining up with previous HTML Pages such as [Game Of The Month API](https://github.com/MaxVukovich/P2Lions/projects/1#card-62300009) and [Crossover API](https://github.com/MaxVukovich/P2Lions/projects/1#card-62262051).
@@ -96,7 +132,7 @@ Here is links to our
 
 [Project Plan](https://docs.google.com/document/d/1m9iGs8guf-1QQK8ik5K9iR7KFQmpcG5HrypKmLz7Zn4/edit) 
 
-[Runtime](http://70.95.177.55:8080)
+[Runtime](https://lions.nighthawkcodingsociety.com/)
 
 [Scrum Board](https://github.com/MaxVukovich/P2Lions/projects/1?fullscreen=true) 
 
