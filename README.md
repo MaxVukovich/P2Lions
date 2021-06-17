@@ -30,12 +30,13 @@
     - Andrew: Classes: [Frontend](https://github.com/MaxVukovich/P2Lions/blob/main/gamereview/Andrew/templates/andrewminilab.html)/[Backend](https://github.com/MaxVukovich/P2Lions/blob/main/gamereview/Andrew/bubblesort.py)/[Runtime](https://lions.nighthawkcodingsociety.com/Andrew/andrewminilab) and Bubbles: [Frontend](https://github.com/MaxVukovich/P2Lions/blob/main/gamereview/Andrew/templates/bubbles1.html)/[Backend](https://github.com/MaxVukovich/P2Lions/blob/main/gamereview/Andrew/bubblesort.py)/[Runtime](https://lions.nighthawkcodingsociety.com/Andrew/bubbles1)
     - Jaideep : Bubbles: [Frontend](https://github.com/MaxVukovich/P2Lions/blob/main/gamereview/Jaideep/templates/bubble2.html)/[Backend](https://github.com/MaxVukovich/P2Lions/blob/main/gamereview/Jaideep/bubble.py)/[Runtime](https://lions.nighthawkcodingsociety.com/Jaideep/bubble2)
 ## API Section (3pt)
-- [API and Receiving](https://lions.nighthawkcodingsociety.com/crossover) 
-    - API for crossover is used [here](https://github.com/MaxVukovich/P2Lions/blob/f355678d7990a48fd0ee840285daaa2dcc00b249/main.py#L131-L139)
-    - Lion's created API for Game of the Month is [here](https://github.com/MaxVukovich/P2Lions/blob/f355678d7990a48fd0ee840285daaa2dcc00b249/main.py#L113-L129) with [runtime](https://lions.nighthawkcodingsociety.com/gameofthemonth)
-## Deployment Section (5pt)
+- API and Receiving
+    - API for crossover is used [here](https://github.com/MaxVukovich/P2Lions/blob/f355678d7990a48fd0ee840285daaa2dcc00b249/main.py#L131-L139) and visually seen [here](https://youtu.be/zxI6K4KPxfg)
+    - Lion's created API for Game of the Month is [here](https://github.com/MaxVukovich/P2Lions/blob/f355678d7990a48fd0ee840285daaa2dcc00b249/main.py#L113-L129) with [video](https://youtu.be/AOq9e9UnSWo)
+## Deployment Section
 - How It's Made section 
     - Located in readme, section is labled How Its Made, is what you are currently looking at
+    - Project Board linked [here](https://github.com/MaxVukovich/P2Lions/projects/1)
 - Commercial (+2pt)
     - [Link to video](https://www.youtube.com/watch?v=XnYaSJoKWxE&ab_channel=Purplebears)
 
